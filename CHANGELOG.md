@@ -7,6 +7,6 @@ The format is based on [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.
 ## [Unreleased]
 
 ### Added
-- _Items in flight will be listed here until the first release._
+- _Items in flight will be listed here until the next release._
 
 [Unreleased]: https://github.com/pierrick-fonquerne/autocommit/commits/main
