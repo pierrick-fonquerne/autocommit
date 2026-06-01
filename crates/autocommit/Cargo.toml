@@ -1,0 +1,22 @@
+[package]
+name = "autocommit"
+description = "Offline scoped Conventional Commits message generator powered by a local LLM"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+authors.workspace = true
+keywords.workspace = true
+categories.workspace = true
+
+[lints]
+workspace = true
+
+[[bin]]
+name = "autocommit"
+path = "src/main.rs"
+
+[dependencies]
+# Dependencies are wired in Phase 1 together with the real CLI skeleton.

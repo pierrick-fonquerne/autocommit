@@ -1,0 +1,14 @@
+msrv = "1.88"
+
+doc-valid-idents = [
+    "..",
+    "Nubster",
+    "Ollama",
+    "Codestral",
+    "Mistral",
+    "Mamba",
+    "Conventional",
+    "SemVer",
+    "PowerShell",
+    "TOML",
+]
