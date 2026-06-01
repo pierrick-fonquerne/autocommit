@@ -1,0 +1,82 @@
+name: Bug report
+description: Report a defect in autocommit
+title: "bug: "
+labels: ["kind:bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug. Please fill the sections below as completely as you can; the more information we have, the faster we can help.
+
+  - type: input
+    id: version
+    attributes:
+      label: autocommit version
+      description: Output of `autocommit --version`
+      placeholder: autocommit 0.1.0
+    validations:
+      required: true
+
+  - type: dropdown
+    id: install_method
+    attributes:
+      label: Installation method
+      options:
+        - scoop
+        - PowerShell installer
+        - cargo install
+        - built from source
+    validations:
+      required: true
+
+  - type: input
+    id: model
+    attributes:
+      label: Model endpoint and model
+      description: The Ollama endpoint and model in use (native or Docker).
+      placeholder: http://localhost:11434 / codestral-mamba
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: Windows 11 / macOS 14.5 / Ubuntu 24.04
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Minimal sequence of actions that triggers the issue.
+      placeholder: |
+        1. Stage a change touching `src/auth/login.rs`
+        2. Run `autocommit --dry-run`
+        3. Observe ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behaviour
+      description: Include error messages or unexpected output. Do not paste secrets that may appear in a diff.
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Anything else worth knowing (custom config, large diff, scope mapping, etc.).
+    validations:
+      required: false
