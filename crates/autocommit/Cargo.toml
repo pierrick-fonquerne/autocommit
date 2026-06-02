@@ -19,4 +19,7 @@ name = "autocommit"
 path = "src/main.rs"
 
 [dependencies]
-# Dependencies are wired in Phase 1 together with the real CLI skeleton.
+serde = { workspace = true }
+thiserror = { workspace = true }
+figment = { workspace = true }
+directories = { workspace = true }
